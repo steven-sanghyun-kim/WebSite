@@ -12,8 +12,13 @@
             if (dog === undefined || dog === null) {
                 Native.error();
             } else {
-                Native.ok();
-                dog.speak();
+                Native.ok('dog 객체는 존재');
+                if (typeof dog.speak === 'function') {
+                    Native.ok('speak 함수 존재');
+                    dog.speak();
+                } else {
+                    error('speak 함수 없음');
+                }
             }
         }
 </script>
