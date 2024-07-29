@@ -9,11 +9,11 @@
     <script type="text/javascript">
         function showAndroidToast(toast) {
             var dog = Native.getDog();
-            if (typeof dog.sum === 'function') {
+            if (dog === undefined || dog === null) {
+                Native.error();
+            } else {
                 Native.ok();
                 dog.speak();
-            } else {
-                Native.error();
             }
         }
 </script>
