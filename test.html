@@ -4,13 +4,13 @@
     <meta name="viewport" content="width=device-width">
 </head>
 <body>
-    <script>
-        function changeColor() {
-           var dog = Native.getDog();
-           dog.speak();
+    <input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
+
+    <script type="text/javascript">
+        function showAndroidToast(toast) {
+            Native.showToast(toast);
+            Native.getDog();
         }
-    </script>
-    <button onclick="changeColor()">Change color</button>
-    <div id="my-div"></div>
+</script>
 </body>
 </html>
