@@ -6,7 +6,8 @@
 <body>
     <script>
         function changeColor() {
-           document.getElementById("my-div").style.backgroundColor = "green";
+           var dog = Native.getDog();
+           dog.speak();
         }
     </script>
     <button onclick="changeColor()">Change color</button>
