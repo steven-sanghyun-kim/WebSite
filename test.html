@@ -8,10 +8,13 @@
 
     <script type="text/javascript">
         function showAndroidToast(toast) {
-            console.log(toast);
-            Native.showToast(toast);
             var dog = Native.getDog();
-            dog.speak();
+            if (typeof dog.sum === 'function') {
+                Native.ok();
+                dog.speak();
+            } else {
+                Native.error();
+            }
         }
 </script>
 </body>
