@@ -8,6 +8,7 @@
 
     <script type="text/javascript">
         function showAndroidToast(toast) {
+            console.log(toast);
             Native.showToast(toast);
             var dog = Native.getDog();
             dog.speak();
