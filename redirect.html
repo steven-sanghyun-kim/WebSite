@@ -1,0 +1,17 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+<input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
+
+<script type="text/javascript">
+    function showAndroidToast(toast) {
+        var currentLocation = window.location;
+        console.log('현재 위치:' + currentLocation);
+        window.location.href = 'https://google.com';
+    }
+</script>
+</body>
+</html>
