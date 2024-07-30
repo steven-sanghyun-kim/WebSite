@@ -7,9 +7,12 @@
 <input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
 
 <script type="text/javascript">
+    var currentLocation = window.location;
+    console.log('현재 위치:' + currentLocation);
+    if (currentLocation == 'https://steven-sanghyun-kim.github.io/WebSite/redirect.html') {
+        window.location.href = 'https://m.naver.com';
+    }
     function showAndroidToast(toast) {
-        var currentLocation = window.location;
-        console.log('현재 위치:' + currentLocation);
         window.location.href = 'https://google.com';
     }
 </script>
